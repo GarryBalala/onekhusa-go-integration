@@ -1,4 +1,4 @@
-# OneKhusa Go (Golang) Integration Reference
+# OneKhusa Request to Pay Go (Golang) Integration Reference
 
 A high-performance reference implementation of the **OneKhusa Payment Gateway** using **Go (Golang)** and the **Gin Web Framework**. This project demonstrates the **Hosted Checkout** flow with real-time webhook automation via **go-socket.io**.
 
