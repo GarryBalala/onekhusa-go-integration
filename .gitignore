@@ -1,0 +1,10 @@
+# Binaries
+main
+main.exe
+*.exe
+
+# Environment variables
+.env
+
+# Dependencies
+vendor/
