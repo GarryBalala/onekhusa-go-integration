@@ -343,19 +343,6 @@ For detailed OneKhusa API documentation, visit:
 - [OneKhusa Developer Docs](https://docs.onekhusa.com)
 - [API Reference](https://docs.onekhusa.com/api)
 
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Support
 
