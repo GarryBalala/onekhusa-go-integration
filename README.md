@@ -336,50 +336,6 @@ kill -9 <PID>
 PORT=8081 go run main.go
 ```
 
-## Building for Production
-
-### Create an Executable
-
-```bash
-# Linux/macOS
-go build -o onekhusa-app main.go
-
-# Windows
-go build -o onekhusa-app.exe main.go
-```
-
-### Run the Executable
-
-```bash
-./onekhusa-app
-```
-
-### Docker Deployment (Optional)
-
-Create a `Dockerfile`:
-
-```dockerfile
-FROM golang:1.19 as builder
-WORKDIR /app
-COPY . .
-RUN go mod download
-RUN go build -o onekhusa-app main.go
-
-FROM alpine:latest
-RUN apk --no-cache add ca-certificates
-WORKDIR /root/
-COPY --from=builder /app/onekhusa-app .
-COPY --from=builder /app/public ./public
-EXPOSE 8080
-CMD ["./onekhusa-app"]
-```
-
-Build and run:
-
-```bash
-docker build -t onekhusa-app .
-docker run -p 8080:8080 --env-file .env onekhusa-app
-```
 
 ## API Reference
 
